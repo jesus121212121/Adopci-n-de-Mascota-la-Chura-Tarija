@@ -1,0 +1,18 @@
+<div class="contenedor">
+  <mat-card *ngFor="let adoptante of adoptantes" class="contenedorCard"> <!-- Corregido aquí -->
+      
+    <mat-card-header>
+      <mat-card-title>
+        Dueño: {{adoptante.nombre}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{adoptante.celular}} - {{adoptante.correo}}
+      </mat-card-subtitle>
+    </mat-card-header>
+      
+    <mat-card-content>
+      <p>Adopción de {{adoptante.nombreMascota}}</p>
+    </mat-card-content>
+       
+  </mat-card>
+</div>
